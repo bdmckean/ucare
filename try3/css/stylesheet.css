@@ -1,3 +1,8 @@
+/* logo colors */
+.u_logo { color:#000000; }
+.care_logo { color:#4169E8; }
+
+
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
@@ -5,7 +10,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #00CCFF;
 }
 
 /* Float the list items side by side */
@@ -21,6 +26,8 @@ ul.topnav li a {
     transition: 0.3s;
     font-size: 17px;
 }
+
+
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #555;}
@@ -55,17 +62,16 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-
-
+/*
 img {
     display: block;
     height: 100px;
     width: 300px;
     margin: auto;
 }
-
+*/
 p {
-    text-align: center;
+    text-align: left;
     font-family: Garamond, serif;
     font-size: 18px;
 }
@@ -90,4 +96,17 @@ span {
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
+}
+
+
+.txt1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+
+.txt2 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
 }
