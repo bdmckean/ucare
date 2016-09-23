@@ -75,7 +75,7 @@ p {
     font-family: Garamond, serif;
     font-size: 18px;
 }
-
+/*
 div {
     border-radius: 5px;
     border: 2px solid #6495ED;
@@ -85,13 +85,24 @@ div {
     margin: auto;
     text-align: center;
 }
+*/
+.rcorners1 {
+    display:table-cell;
+    border-radius: 25px;
+    background: #00ccff;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+    vertical-align:middle;
+}
 
+/*
 a {
     text-decoration: none;
     color: #3D59AB;
     font-family: Verdana, sans-serif;
 }
-
+*/
 span {
     font-weight: bold;
     font-size: 18px;
@@ -109,4 +120,29 @@ span {
     font-weight: normal;
     font-size: 18px;
     color: #000000;
+}
+
+
+.link_in_box{
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}
 }
