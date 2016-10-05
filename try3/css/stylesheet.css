@@ -2,6 +2,11 @@
 .u_logo { color:#000000; }
 .care_logo { color:#4169E8; }
 
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -24,7 +29,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 
@@ -46,7 +51,7 @@ ul.topnav li.icon {display: none;}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive {position: top;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
@@ -62,6 +67,16 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+.navsticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+
 /*
 img {
     display: block;
@@ -70,6 +85,14 @@ img {
     margin: auto;
 }
 */
+body, html {
+    height: 100%;
+    overflow: scroll;
+    padding-top: 44px;
+    padding-bottom: 25px;
+    line-height: 1.0;
+}
+
 p {
     text-align: left;
     font-family: Garamond, serif;
@@ -78,14 +101,19 @@ p {
 /*
 div {
     border-radius: 5px;
-    border: 2px solid #6495ED;
-    background-color: #BCD2EE;
+    border: 2px solid #6495ed;
+    background-color: #bcd2ee;
     height: 50px;
     width: 120px;
     margin: auto;
     text-align: center;
 }
 */
+div {
+    margin: auto;
+    text-align: center;
+}
+
 body {
     background-image: url("../img/cork-wallet.png");
 }
@@ -174,3 +202,17 @@ a:hover, a:active {
     background-color: #00ccff;
 }
 
+.pageclass {
+    height: 500px;
+}
+.pagetextbox {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
