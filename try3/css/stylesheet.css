@@ -206,8 +206,10 @@ a:hover, a:active {
     height: 500px;
 }
 .pagetextbox {
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
     width: 300px;
-    border: 25px solid green;
+    border: 3px solid #555;
     padding: 25px;
     margin: 25px;
 }
