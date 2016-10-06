@@ -1,3 +1,19 @@
+/* colors */
+/*
+  :root {
+      --main-color: #83CADE;
+      --comp-color1: #C583DE;
+      --comp-color2: #DE9783;
+      --comp-color3: #9CDE83;
+}
+*/
+
+:root {
+      --main-color: #6BA5BA;
+      --comp-color1: #6BBA80;
+      --comp-color2: #BAA76B;
+      --comp-color3: #6BBAA7;
+}
 /* logo colors */
 .u_logo { color:#000000; }
 .care_logo { color:#4169E8; }
@@ -15,7 +31,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00CCFF;
+    background-color: var(--main-color);
 }
 
 /* Float the list items side by side */
@@ -24,7 +40,7 @@ ul.topnav li {float: left;}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #f2f2f2; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -92,7 +108,6 @@ body, html {
     padding-bottom: 25px;
     line-height: 1.0;
 }
-
 p {
     text-align: left;
     font-family: Garamond, serif;
@@ -115,7 +130,7 @@ div {
 }
 
 body {
-    background-image: url("../img/cork-wallet.png");
+    background-color:var(--comp-color2);
 }
 
 
@@ -183,7 +198,7 @@ span {
 
 
 .link_in_box{
-    background-color: #357ae8;
+    background-color: var(--main-color);
     color: white;
     width: 200px;
     padding: 25px;
@@ -196,14 +211,14 @@ span {
 ul.topnav li a:hover {background-color: #555;}
 
 .link_in_box a:hover, .link_in_box a:active {
-    background-color: blue;
+    background-color: var(--comp-color3);
 }
 a:hover, a:active {
-    background-color: #00ccff;
+    background-color: var(--comp-color1);
 }
 
 .pageclass {
-    height: 500px;
+    height: auto;
 }
 .pagetextbox {
     font:16px/26px Georgia, Garamond, Serif;
@@ -211,7 +226,8 @@ a:hover, a:active {
     width: 300px;
     border: 3px solid #555;
     padding: 25px;
-    margin: 25px;
+    margin: 50px 25px;
+    height: 300px;
 }
 
 .container{

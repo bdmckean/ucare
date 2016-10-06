@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<o!DOCTYPE html>
 <html class="no-js" lang="English">
 <head>
   <meta name="generator" content=
@@ -52,20 +52,24 @@
   </ul><!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
-  <div id="page0" class="pageclass" style="background-image:url('./img/Picture2.png')"   >
-    <a id="home" class="smooth"></a>
-    <h1>Get support now</h1>
-    <h2>You are not alone</h2>
+  <div id="page0" style="background-color:var(--comp-color2" class="pageclass">
+      <a id="home" class="smooth"></a>
+    <div style="padding:30px;height:auto">
+        <h1>Get support now</h1>
+        <h2>You are not alone</h2>
+    </div>
     <p style="text-align:center">While everyone else is helping
     your loved one, UCare is here to help you</p>
+    <div class="container">
     <div >
-      <img src="img/happycaregiver.png" alt="happy care giver" width="275px" height="183px"> 
+      <img src="img/happycaregiver.png" style="margin:20px" alt="happy care giver" width="275px" height="183px"> 
     </div>
     <div>
-      <a href="#caregiver" class= "rcorners1 link_in_box vertical_center">Start receiving support with UCare</a>
+      <a href="#caregiver" class="rcorners1 link_in_box vertical_center">Start receiving support with UCare</a>
     </div> 
+    </div>
   </div>
-  <div id="page1" style="background-color:#d3d3d3" class= "pageclass container">
+  <div id="page1" class= "pageclass container">
     <a id="caregiver" class="smooth"></a>
     <div class="pagetextbox">
       <div style= "float:left">
@@ -89,11 +93,10 @@
         scheduled visits.</p>
       </div>
     </div>
-    <div><img style="float: left" src="img/phone.png" alt= "phone app1" width="137px" height="267px"></div>
+    <div><img style="float:left; margin:20px" src="img/drphone.jpeg" alt= "phone app1" width="auto" height="auto"></div>
   </div>
-  <div id="page2"  class="pageclass">
+  <div id="page2"  class="pageclass container">
     <a id="provider" class="smooth"></a>
-    <div style="margin:20px" class="container">
       <div><img src="img/phone.png" alt="phone app1" width="137px" height="267px"></div>
       <div class="pagetextbox">
         <div style= "float:right;">
@@ -115,7 +118,6 @@
           <h4 style="color:green">See More Reasons to Provide
           Support via UCare</h4>
         </div>
-      </div>
     </div>
   </div>
   <div id="page3" style="background-color:#d3d3d3" class=
@@ -190,6 +192,12 @@
     var x = document.getElementById("myTopnav");
     x.className = "topnav";
   }
+  var apiurl = 'http://api.ipinfodb.com/v3/ip-city';
+  $.getJSON(apiurl+'/format=json&callback=?',
+    function(data){
+        $("h3#location").html(data.regionName + ", " + data.countryName);
+    }
+  );
   </script>
 </body>
 </html>
